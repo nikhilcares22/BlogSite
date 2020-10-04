@@ -5,3 +5,15 @@ i.icon {
 .container.main {
     margin-top: 6em;
 }
+
+#delete_form {
+    display: inline;
+}
+
+#edit_delete {
+    margin-top: 10px;
+}
+
+#main_header {
+    font-family: 'Comfortaa', cursive;
+}

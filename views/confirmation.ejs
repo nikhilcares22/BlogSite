@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+    <div class="container  ui main text raised segment">
+        <div class=" ui container header ">
+            <h1 class="header ui huge">Are You Sure ?</h1>
+        </div>
+        <form class="ui form " action="/blogs/<%= id%>?_method=DELETE" method="POST">
+            <button type="submit" class="button ui secondary">Yes</button>
+            <a href="/blogs/<%= id %> " class="button ui basic">No</a>
+        </form>
+    </div>
+    <%- include('partials/footer') %>

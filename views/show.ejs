@@ -23,6 +23,15 @@
                             <%- blog.body %>
                         </p>
                     </div>
+                    <div id="edit_delete">
+                        <a class="ui primary button" href="/blogs/<%= blog._id %>/edit">Edit </a>
+
+                        <form class="ui form " id="delete_form" action="/blogs/<%= blog._id %>/confirmation" method="GET">
+                            <button type="submit" class="ui black button ">Delete</button>
+                        </form>
+
+                    </div>
+
                 </div>
             </div>
 

@@ -19,6 +19,7 @@
                 <textarea name="blog[body]"><%= blog.body %></textarea>
             </div>
             <button class="ui button blue large raised" type="submit">Update</button>
+            <a href="/blogs/<%= blog.id %> " class="ui button basic medium">Back</button>
         </form>
     </div>
     <%- include('partials/footer') %>
