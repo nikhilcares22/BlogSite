@@ -5,8 +5,8 @@
             <div class="ui divided items">
                 <% blogs.forEach(blog => { %>
                     <div class="container item main">
-                        <div class="image">
-                            <img src="<%= blog.image %> " alt="">
+                        <div class="image  ">
+                            <img class="ui image rounded" src="<%= blog.image %> " alt="">
                         </div>
                         <div class="content">
                             <a href="/blogs/<%= blog._id %>" class="header">
