@@ -6,7 +6,8 @@ let express = require('express'),
     expressSanitizer = require('express-sanitizer'),
     port = 3000;
 
-mongoose.connect("mongodb://localhost:27017/restful_blog_app", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect("mongodb+srv://nikhil:nehminilu@cluster0.udzon.mongodb.net/restful_blog_app?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+// mongoose.connect("mongodb://localhost:27017/restful_blog_app", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 //APP CONFIG
 app.set('view engine', "ejs");
