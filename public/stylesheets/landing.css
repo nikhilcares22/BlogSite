@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.cont {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cont .slide {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+.cont .slide.show {
+    opacity: 0.85;
+}
+
+.content {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content .header {
+    font-size: 4.2em;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.content .btn {
+    font-family: 'Righteous', cursive;
+    font-size: 1.7em;
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        top: -7vh;
+    }
+    .content .header {
+        font-size: 3.5em;
+    }
+    .content .btn {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 708px) {
+    .content {
+        top: -8vh;
+    }
+    .content .header {
+        font-size: 2.5em;
+    }
+    .content .btn {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 503px) {
+    .content {
+        top: -9vh;
+    }
+    .content .header {
+        font-size: 2em;
+    }
+    .content .btn {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .content {
+        top: -9vh;
+    }
+    .content .header {
+        font-size: 1.5em;
+    }
+    .content .btn {
+        font-size: 0.8em;
+    }
+}
