@@ -120,6 +120,8 @@ app.get('/blogs/:id/confirmation', (req, res) => {
     res.render('confirmation', { id: req.params.id });
 });
 
-app.listen(port, () => {
-    console.log(`listening at port ${port}`)
-});
+// app.listen(port, () => {
+//     console.log(`listening at port ${port}`)
+// });
+
+app.listen(process.env.PORT, process.env.IP);
