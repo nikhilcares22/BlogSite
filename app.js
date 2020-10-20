@@ -4,9 +4,9 @@ let express = require('express'),
     bodyParser = require('body-parser'),
     expressSanitizer = require('express-sanitizer'),
     blogRoutes = require('./routes/blogs'),
-    indexRoutes = require('./routes/index'),
-    port = 3000;
+    indexRoutes = require('./routes/index');
 
+const { port } = require('./config.js');
 
 //APP CONFIG
 app.set('view engine', "ejs");
@@ -24,4 +24,6 @@ app.use("/", indexRoutes)
 //     console.log(`listening at port ${port}`)
 // });
 
-app.listen(process.env.PORT, process.env.IP);
+app.listen(port, () => {
+    console.log(`Server running at ${port}`)
+});
