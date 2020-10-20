@@ -3,7 +3,7 @@ let mongoose = require('mongoose');
 const { url } = require('../config.js');
 console.log(url)
 
-//"mongodb+srv://nikhil:nehminilu@cluster0.udzon.mongodb.net/restful_blog_app?retryWrites=true&w=majority"
+//"mongodb+srv://nikhil:nehminilu@cluster0.udzon.mongodb.net/restful_blog_app?retryWrites=true&w=majority"//
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 //MONGOOSE MODEL CONFIG
